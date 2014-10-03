@@ -82,7 +82,7 @@ class C3 implements ListenerAggregateInterface
     public function codeCoverage(EventInterface $event)
     {
         if ('development' === getenv('APP_ENV')) {
-            include 'vendor/codeception/c3/c3.php';
+            include getcwd() . '/c3.php';
         }
     }
 }
