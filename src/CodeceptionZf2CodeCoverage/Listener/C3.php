@@ -1,5 +1,5 @@
 <?php
-namespace CodeceptionZf2CodeCoverage;
+namespace CodeceptionZf2CodeCoverage\Listener;
 
 use Zend\EventManager\ListenerAggregateInterface;
 use Zend\EventManager\EventManagerInterface;

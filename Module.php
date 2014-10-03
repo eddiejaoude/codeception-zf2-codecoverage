@@ -2,6 +2,7 @@
 
 namespace CodeceptionZf2CodeCoverage;
 
+use CodeceptionZf2CodeCoverage\Listener\C3;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 
