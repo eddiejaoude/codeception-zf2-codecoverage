@@ -61,7 +61,7 @@ class C3 implements ListenerAggregateInterface
      */
     public function attach(EventManagerInterface $events)
     {
-        $this->addListener($events->attach(MvcEvent::EVENT_ROUTE, array($this, 'codeCoverage')));
+        $this->addListener($events->attach(MvcEvent::EVENT_BOOTSTRAP, array($this, 'codeCoverage')));
     }
 
     /**
