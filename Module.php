@@ -18,9 +18,9 @@ class Module
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
 
-        $eventManager->attach(
-            new C3()
-        );
+        // Event fires too late
+        // Put in here for now
+        include getcwd() . '/c3.php';
     }
 
     public function getAutoloaderConfig()
